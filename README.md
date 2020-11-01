@@ -1,6 +1,6 @@
 # What am I doing here?
 
-This repository implements an cenario to exemplify the usage of the SpliChunks optimization option.
+This repository implements an cenario to exemplify the usage of the SplitChunks optimization option.
 
 # Cenario architecture
 ![Architecture 1](./docs/images/architecture.jfif)
