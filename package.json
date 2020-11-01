@@ -1,0 +1,22 @@
+{
+  "name": "webpacksandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "lodash": "^4.17.20",
+    "serve": "^11.3.2",
+    "webpack": "^5.3.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -c ./webpack.config.js && webpack -c ./webpack.config.split.js&& webpack -c ./webpack.config.split.entry.js",
+    "serve": "serve ./dist -p 10000 -s && serve ./dist_split -p 10001 -s && serve ./dist_entry_dep -p 10002 -s"
+  },
+  "author": "",
+  "license": "ISC"
+}
