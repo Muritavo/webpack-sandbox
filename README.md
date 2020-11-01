@@ -3,12 +3,12 @@
 This repository implements an cenario to exemplify the usage of the SpliChunks optimization option.
 
 # Cenario architecture
-![Architecture 1](./docs/images/architecture.jiff)
+![Architecture 1](./docs/images/architecture.jfif)
 The lodash is dependency for both chunks parent and friend.
 Without optimization, the lodash will be duplicated
 With optimization, the lodash will be put on a different chunk a single time only
 
-![Architecture 2](./docs/images/architecture_with_entry_dependency.jiff)
+![Architecture 2](./docs/images/architecture_with_entry_dependency.jfif)
 The lodash is dependency for the entry point (main script) as well for both chunks parent and friend.
 Without optimization lodash would added a single time on the main chunk, and preloaded for both the childs
 With optimization, the lodash is put on another chunk but the loading of the main chunk execution is now async, waiting for the lodash chunk to be loaded.
